@@ -3,19 +3,7 @@ import React, {Component} from 'react'
 import Searchbox from './../comman/searchbox';
 
 class Header extends Component{
-    state ={
-        users: [],
-        searchQuery :"",
-        selectedUser : null,
-        currentPage : 1,
-    }
-    handleUserSelect = user =>{
-        this.setState({ selectedUser : user,searchQuery: "" , currentPage : 1})
-    }
-    handleSearch = query =>{
-        this.setState({ searchQuery :query ,selectedUser : null ,currentPage:1})
-        console.log("searchQuery: ",query)
-    }
+    
     render(){
         
         return (

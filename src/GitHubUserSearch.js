@@ -8,7 +8,7 @@ import User from './compoents/User';
 const SearchGitUsers = () => {
     const [users, setUsers] = useState([]);
      const searchUsers = query =>{
-         axios.get(`http://api.github.com/search/users?q=${query}&page=1&client_id=${process.env.REACT_APP_CLIENT_ID}&client_secret=${process.env.REACT_APP_CLIENT_SECRET}`)
+         axios.get(`https://api.github.com/search/users?q=${query}`)
          .then(response =>{
              setUsers(response.data.items)
          })
